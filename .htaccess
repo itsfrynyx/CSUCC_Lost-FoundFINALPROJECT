@@ -1,0 +1,7 @@
+# Redirect favicon requests to the actual icon location
+RedirectMatch 301 ^/favicon\.ico$ /PICTURES/android-chrome-192x192.png
+
+# Enable CORS for local development (optional)
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>

@@ -1,0 +1,447 @@
+/* ============================================
+   SMOOTH BOOK LOADING ANIMATIONS
+   Universal animation system for all book displays
+   ============================================ */
+
+/* Book Card Skeleton Loader */
+.book-skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 12px;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade In Scale Animation */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Slide In From Left */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Slide In From Right */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Bounce In Animation */
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Rotate In Animation */
+@keyframes rotateIn {
+    from {
+        opacity: 0;
+        transform: rotate(-200deg) scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0) scale(1);
+    }
+}
+
+/* Flip In Animation */
+@keyframes flipIn {
+    from {
+        opacity: 0;
+        transform: perspective(400px) rotateY(90deg);
+    }
+    to {
+        opacity: 1;
+        transform: perspective(400px) rotateY(0);
+    }
+}
+
+/* Book Loading Classes */
+.book-loading {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.book-loading-scale {
+    opacity: 0;
+    animation: fadeInScale 0.5s ease-out forwards;
+}
+
+.book-loading-slide-left {
+    opacity: 0;
+    animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.book-loading-slide-right {
+    opacity: 0;
+    animation: slideInRight 0.6s ease-out forwards;
+}
+
+.book-loading-bounce {
+    opacity: 0;
+    animation: bounceIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.book-loading-rotate {
+    opacity: 0;
+    animation: rotateIn 0.6s ease-out forwards;
+}
+
+.book-loading-flip {
+    opacity: 0;
+    animation: flipIn 0.6s ease-out forwards;
+}
+
+/* Staggered Animation Delays */
+.book-loading:nth-child(1) { animation-delay: 0.05s; }
+.book-loading:nth-child(2) { animation-delay: 0.1s; }
+.book-loading:nth-child(3) { animation-delay: 0.15s; }
+.book-loading:nth-child(4) { animation-delay: 0.2s; }
+.book-loading:nth-child(5) { animation-delay: 0.25s; }
+.book-loading:nth-child(6) { animation-delay: 0.3s; }
+.book-loading:nth-child(7) { animation-delay: 0.35s; }
+.book-loading:nth-child(8) { animation-delay: 0.4s; }
+.book-loading:nth-child(9) { animation-delay: 0.45s; }
+.book-loading:nth-child(10) { animation-delay: 0.5s; }
+
+/* Apply same delays to other animation types */
+.book-loading-scale:nth-child(1),
+.book-loading-slide-left:nth-child(1),
+.book-loading-slide-right:nth-child(1),
+.book-loading-bounce:nth-child(1),
+.book-loading-rotate:nth-child(1),
+.book-loading-flip:nth-child(1) { animation-delay: 0.05s; }
+
+.book-loading-scale:nth-child(2),
+.book-loading-slide-left:nth-child(2),
+.book-loading-slide-right:nth-child(2),
+.book-loading-bounce:nth-child(2),
+.book-loading-rotate:nth-child(2),
+.book-loading-flip:nth-child(2) { animation-delay: 0.1s; }
+
+.book-loading-scale:nth-child(3),
+.book-loading-slide-left:nth-child(3),
+.book-loading-slide-right:nth-child(3),
+.book-loading-bounce:nth-child(3),
+.book-loading-rotate:nth-child(3),
+.book-loading-flip:nth-child(3) { animation-delay: 0.15s; }
+
+.book-loading-scale:nth-child(4),
+.book-loading-slide-left:nth-child(4),
+.book-loading-slide-right:nth-child(4),
+.book-loading-bounce:nth-child(4),
+.book-loading-rotate:nth-child(4),
+.book-loading-flip:nth-child(4) { animation-delay: 0.2s; }
+
+.book-loading-scale:nth-child(5),
+.book-loading-slide-left:nth-child(5),
+.book-loading-slide-right:nth-child(5),
+.book-loading-bounce:nth-child(5),
+.book-loading-rotate:nth-child(5),
+.book-loading-flip:nth-child(5) { animation-delay: 0.25s; }
+
+.book-loading-scale:nth-child(6),
+.book-loading-slide-left:nth-child(6),
+.book-loading-slide-right:nth-child(6),
+.book-loading-bounce:nth-child(6),
+.book-loading-rotate:nth-child(6),
+.book-loading-flip:nth-child(6) { animation-delay: 0.3s; }
+
+.book-loading-scale:nth-child(7),
+.book-loading-slide-left:nth-child(7),
+.book-loading-slide-right:nth-child(7),
+.book-loading-bounce:nth-child(7),
+.book-loading-rotate:nth-child(7),
+.book-loading-flip:nth-child(7) { animation-delay: 0.35s; }
+
+.book-loading-scale:nth-child(8),
+.book-loading-slide-left:nth-child(8),
+.book-loading-slide-right:nth-child(8),
+.book-loading-bounce:nth-child(8),
+.book-loading-rotate:nth-child(8),
+.book-loading-flip:nth-child(8) { animation-delay: 0.4s; }
+
+.book-loading-scale:nth-child(9),
+.book-loading-slide-left:nth-child(9),
+.book-loading-slide-right:nth-child(9),
+.book-loading-bounce:nth-child(9),
+.book-loading-rotate:nth-child(9),
+.book-loading-flip:nth-child(9) { animation-delay: 0.45s; }
+
+.book-loading-scale:nth-child(10),
+.book-loading-slide-left:nth-child(10),
+.book-loading-slide-right:nth-child(10),
+.book-loading-bounce:nth-child(10),
+.book-loading-rotate:nth-child(10),
+.book-loading-flip:nth-child(10) { animation-delay: 0.5s; }
+
+/* Book Item Specific Animations */
+.book-item.book-loading,
+.book-card.book-loading,
+tr.book-loading {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Image Loading Animation */
+.book-cover-loading {
+    position: relative;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.book-cover-loading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+    animation: shimmer 1.5s infinite;
+}
+
+.book-cover-loaded {
+    animation: fadeInScale 0.4s ease-out;
+}
+
+/* Smooth Hover Effects */
+.book-item,
+.book-card,
+.book-row {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.book-item:hover,
+.book-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Loading Spinner for Books */
+.books-loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.spinner-book {
+    width: 60px;
+    height: 60px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3B82F6;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Skeleton Book Card */
+.book-skeleton-card {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.book-skeleton-image {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.book-skeleton-title {
+    width: 80%;
+    height: 20px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.book-skeleton-author {
+    width: 60%;
+    height: 16px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.book-skeleton-price {
+    width: 40%;
+    height: 18px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 4px;
+}
+
+/* Pulse Animation for Loading States */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.book-loading-pulse {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Smooth Transitions for Dynamic Content */
+.books-container {
+    position: relative;
+    min-height: 200px;
+}
+
+.books-container.loading {
+    pointer-events: none;
+}
+
+/* Fade Out Animation for Removing Items */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+.book-removing {
+    animation: fadeOut 0.3s ease-out forwards;
+}
+
+/* Success Animation for Added Items */
+@keyframes successPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+    }
+}
+
+.book-added-success {
+    animation: successPulse 0.6s ease-out;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .book-loading,
+    .book-loading-scale,
+    .book-loading-slide-left,
+    .book-loading-slide-right {
+        animation-duration: 0.4s;
+    }
+    
+    .book-item:hover,
+    .book-card:hover {
+        transform: translateY(-2px);
+    }
+}
+
+/* Performance Optimization */
+.book-loading,
+.book-loading-scale,
+.book-loading-slide-left,
+.book-loading-slide-right,
+.book-loading-bounce,
+.book-loading-rotate,
+.book-loading-flip {
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Reduce Motion for Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .book-loading,
+    .book-loading-scale,
+    .book-loading-slide-left,
+    .book-loading-slide-right,
+    .book-loading-bounce,
+    .book-loading-rotate,
+    .book-loading-flip {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+    
+    .book-item:hover,
+    .book-card:hover {
+        transform: none;
+    }
+}

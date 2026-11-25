@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+/* body {
+        font-family: 'Roboto' sans-serif;
+        background-image: url('./image/4.jpg');
+        background: linear-gradient(90deg, rgba(141, 194, 111, 1) 0% rgba(118, 184, 82, 1) 50%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-color: grey; */
+
+body {
+    font-family: 'Roboto' sans-serif;
+    /* background-image: url('./image/4.jpg'); */
+    background: linear-gradient(90deg, #393b38 0% rgba(118, 184, 82, 1) 50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    /* background-color: grey; */
+}
+
+
+.inner-row {
+    height: 100%;
+}
+
+.primaryBg {
+    /* background: rgba(141, 194, 111, 1); */
+    background-color: #0dbf3c;
+    width: 100%;
+    max-width: 200px;
+    /* font-size: large; */
+}
+
+.form-control {
+    background-color: transparent;
+
+}
+
+#floatingAge {
+    background-color: transparent;
+}
+
+.form-select {
+    background-color: transparent;
+}
+
+.primaryColor {
+    color: rgb(133, 182, 238)
+}
+
+/* .form-box {
+        background: #fff;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background: white;
+        opacity: 0.9;
+    } */
+
+/* register box */
+.form-box {
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+    padding: 20px;
+    opacity: 0.9;
+}
+
+/* login  box */
+.form-box2 {
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 120px;
+    opacity: 0.9;
+}
+
+.registration-form {
+    display: none;
+}
+
+p {
+    font-size: 15px;
+}
+
+.olala {
+    text-align: center;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.error-message {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    color: #e01b26;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#password-strength,
+#confirmPassword-strength {
+    font-weight: 600;
+}
+
+.limitreach {
+    color: red;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#total-time-left {
+    color: black;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+/* 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', "Noto Sans Myanmar UI", arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.input-bx {
+    position: relative;
+}
+
+.input-bx input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced2d6;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+.input-bx span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    font-size: 1rem;
+    color: rgb(95, 99, 104);
+    pointer-events: none;
+    transition: 0.2s;
+}
+
+.input-bx input:valid~span,
+.input-bx input:focus~span {
+    color: #222cf7;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.70rem;
+    font-weight: 200;
+    padding: 0;
+    background: white;
+    letter-spacing: 0.1rem;
+}
+
+.input-bx input:valid,
+.input-bx input:focus {
+    color: #222cf7;
+    border: 2px solid;
+}
+
+/* .span {
+                            background-color: transparent;
+                        } */

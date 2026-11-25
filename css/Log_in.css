@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+h1 {
+  text-align: center;
+  color: #000000;
+  margin: 0;
+}
+
+/* Styling the "BookStore" */
+.bookstore {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #882b2a;
+  margin-top: -20px; /* Adds space between the h1 and the bookstore text */
+  margin-left: 400px;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.text-white {
+  color: white;
+}
+
+label {
+  display: block;
+}
+
+input[type="email"],
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"].btn-primary {
+  width: 100%;
+  padding: 8px;
+  background-color: rgb(161, 74, 34); /* Bloody red color */
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none; /* Remove default outline */
+  box-shadow: none; /* Remove box-shadow (default on focus in some browsers) */
+}
+
+button[type="submit"].btn-primary:active {
+  background-color: rgb(122, 107, 83) !important; /* Black when clicked */
+  color: rgb(255, 255, 255) !important; /* White text when clicked */
+  outline: none; /* Remove outline on active */
+  box-shadow: none; /* Remove box-shadow on active state */
+}
+
+/* Verify Security Page Button Styling */
+.btn-verify {
+  background-color: rgb(161, 74, 34) !important; /* Bloody red color */
+  color: rgb(255, 255, 255) !important;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-verify:hover {
+  background-color: rgb(140, 64, 29) !important; /* Darker bloody red on hover */
+  color: rgb(255, 255, 255) !important;
+}
+
+.btn-verify:active {
+  background-color: rgb(122, 107, 83) !important; /* Black when clicked */
+  color: rgb(255, 255, 255) !important;
+  outline: none;
+  box-shadow: none;
+}
+
+button[type="submit"].btn-primary:focus {
+  outline: none; /* Remove the blue outline */
+  box-shadow: none; /* Remove the focus box-shadow */
+  background-color: rgb(122, 107, 83) !important; /* Black when clicked */
+  color: rgb(255, 255, 255) !important; /* White text remains */
+}
+
+p {
+  text-align: center;
+  color: #070333;
+}
+
+a {
+  color: white;
+}
+
+.password-input {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.toggle-password::before {
+  content: '\f070';
+  /* Font Awesome eye icon (visible) */
+}
+
+.password-visible .toggle-password::before {
+  content: '\f070';
+  /* Font Awesome eye-slash icon (hidden) */
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto' sans-serif;
+  background-image: url('../PICTURES/Landing\ Page.jpg');
+  background: linear-gradient(90deg, rgba(141, 194, 111, 1) 0% rgba(118, 184, 82, 1) 50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+.curiosity {
+  margin-top: 40px;  /* Top margin */
+  margin-bottom: 30px;  /* Bottom margin */
+  margin-left: -300px;
+}
+
+p {
+  margin-left: -320px; /* Adjust the margin here */
+  font-size: 20px;
+  color: white;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center; /* Aligns the icon and text vertically */
+  padding: 10px 15px;
+  position: relative; /* Ensures the pseudo-element can be positioned correctly */
+  overflow: hidden; /* To avoid content spilling out during hover */
+  cursor: not-allowed;
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0; /* Position the line at the bottom of the nav item */
+  left: 0;
+  width: 0; /* Start with no width */
+  height: 2px; /* Height of the underline */
+  background-color: #d2e6fd; /* Color of the underline */
+  transition: width 0.3s ease; /* Smooth transition for the width */
+}
+
+.nav-item i {
+  font-size: 1.5rem; /* Adjusts the size of the icons */
+  margin-right: 8px; /* Adds space between icon and text */
+  transition: color 0.3s ease; /* Smooth transition for icon color */
+}
+
+.nav-text {
+  font-size: 1.1rem; /* Adjust the text size here */
+  transition: color 0.3s ease; /* Smooth transition for text color */
+
+}
+
+.nav-link {
+  display: flex;
+  align-items: center; /* Ensures the text and icon are vertically aligned */
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease; /* Smooth transition for link color */
+
+}
+
+.nav-item.active .nav-link .nav-item {
+  font-weight: bold; /* Optional: Highlights the active item */
+  color: #007bff; /* Active item color */
+
+}
+
+/* Base card styling */
+.card {
+  margin-top: -32px; /* Negative margin for subtle lift effect */
+  border-radius: 12px; /* Rounded corners for a softer appearance */
+  background-color: #ffffff; /* Clean, neutral background */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Subtle and refined shadow for depth */
+  overflow: hidden; /* Ensures content doesn't spill over */
+  position: relative; /* For absolute positioning of child elements */
+  padding: 20px; /* Spacing inside the card */
+  cursor: pointer; /* Pointer cursor indicates interactivity */
+  background-image: linear-gradient(135deg, #f9f9f9, #ffffff); /* Soft gradient for texture */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+/* Hover effect for card */
+.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12); /* Deeper shadow on hover for emphasis */
+}
+
+/* Focus effect for accessibility */
+.card:focus {
+  outline: none; /* Removes default outline */
+  box-shadow: 0 0 10px rgba(0, 121, 255, 0.7); /* Soft blue glow on focus */
+  transform: translateY(-4px); /* Slight lift on focus */
+}
+
+/* Image inside the card */
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners for images */
+  transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
+}
+
+/* Title styling */
+.card .card-title {
+  font-size: 1.25em; /* Slightly larger for better hierarchy */
+  font-weight: 700; /* Bold for emphasis */
+  margin-bottom: 15px; /* More space between title and description */
+  color: #333; /* Dark text for readability */
+  line-height: 1.4; /* Slightly tighter line height for title */
+}
+
+/* Description styling */
+.card .card-description {
+  font-size: 1em; /* Standard text size */
+  color: #555; /* Softer text color for the body */
+  line-height: 1.6; /* Increased line height for improved readability */
+  margin-bottom: 20px; /* Space between description and any other content */
+}
+
+/* Responsive design adjustments */
+
+/* Medium screens (tablets, landscape) */
+@media (max-width: 1024px) {
+  .card {
+    margin-top: 0; /* Remove negative margin on medium screens */
+    padding: 18px; /* Adjust padding for better spacing */
+  }
+
+  .card .card-title {
+    font-size: 1.1em; /* Adjust title font size */
+  }
+
+  .card .card-description {
+    font-size: 0.95em; /* Adjust description font size */
+  }
+}
+
+/* Small screens (tablets, portrait, and mobile) */
+@media (max-width: 768px) {
+  .card {
+    margin-top: 10px; /* Adjust margin for mobile */
+    padding: 15px; /* Reduced padding for smaller screens */
+  }
+
+  .card .card-title {
+    font-size: 1em; /* Slightly smaller title on mobile */
+  }
+
+  .card .card-description {
+    font-size: 0.9em; /* Smaller font for better readability on mobile */
+  }
+}
+
+/* Extra small screens (small mobile devices) */
+@media (max-width: 480px) {
+  .card {
+    padding: 12px; /* Further reduced padding for smaller screens */
+  }
+
+  .card .card-title {
+    font-size: 0.95em; /* Smaller title size for very small devices */
+  }
+
+  .card .card-description {
+    font-size: 0.85em; /* Adjust text size for readability on small devices */
+  }
+}
+
+#age {
+  background-color: transparent;
+}
+
+.button-reg {
+  width: 50px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 10px;
+  background-color: white;
+  color: #000000;
+  width: 100%;
+  margin-top: auto;
+  position: relative;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive footer adjustments */
+@media (max-width: 768px) {
+  footer {
+    padding: 15px 10px;
+    font-size: 0.9rem;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 12px 8px;
+    margin-top: 20px;
+    font-size: 0.85rem;
+  }
+}
+/* Professional Navbar Styling */
+.navbar {
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-bottom: 2px solid #e9ecef;
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.navbar:hover {
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Brand Logo and Text */
+.navbar-logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0;
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.brand-subtitle {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #6c757d;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Navigation Items - Right Alignment */
+.navbar-nav {
+  justify-content: flex-end !important;
+  text-align: right !important;
+  width: 100%;
+}
+
+.nav-item {
+  margin: 0 8px;
+  position: relative;
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 12px 16px;
+  border-radius: 25px;
+  color: #495057;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-align: right;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(52, 152, 219, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.nav-link:hover::before {
+  left: 100%;
+}
+
+.nav-link:hover {
+  background: linear-gradient(135deg, #882b2a 0%, #a02c2b 100%);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(136, 43, 42, 0.3);
+}
+
+.nav-link i {
+  margin-right: 8px;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover i {
+  transform: scale(1.2);
+}
+
+.nav-text {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* Active Navigation Item */
+.nav-item.active .nav-link {
+  background: linear-gradient(135deg, #882b2a 0%, #a02c2b 100%);
+  color: white !important;
+  box-shadow: 0 4px 15px rgba(136, 43, 42, 0.3);
+}
+
+/* Register Button - Uniform Color */
+.register-btn {
+  background: linear-gradient(135deg, #882b2a 0%, #a02c2b 100%);
+  color: white !important;
+  border: none;
+  animation: pulse 2s infinite;
+}
+
+.register-btn:hover {
+  background: linear-gradient(135deg, #a02c2b 0%, #b83231 100%);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(136, 43, 42, 0.4);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(136, 43, 42, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(136, 43, 42, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(136, 43, 42, 0); }
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid #e9ecef;
+}
+
+.search-box:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border-color: #3498db;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 25px 0 0 25px;
+  width: 200px;
+  font-size: 0.9rem;
+  background: transparent;
+  transition: width 0.3s ease;
+}
+
+.search-input:focus {
+  width: 250px;
+}
+
+.search-btn {
+  border: none;
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  background: linear-gradient(135deg, #2980b9 0%, #21618c 100%);
+  transform: scale(1.05);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+  
+  .brand-title {
+    font-size: 1.4rem;
+  }
+  
+  .brand-subtitle {
+    font-size: 0.8rem;
+  }
+  
+  .navbar-logo {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .search-box {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .search-input {
+    width: 100%;
+    flex: 1;
+  }
+  
+  .nav-item {
+    margin: 5px 0;
+  }
+  
+  .nav-link {
+    padding: 10px 15px;
+    border-radius: 20px;
+  }
+}
+.navbar-light .navbar-nav .nav-link {
+  color: black; /* Ensures nav links are visible */
+}
+.navbar-light .navbar-brand {
+  color: rgb(0, 0, 0); /* Ensures brand text is visible */
+}
+.navbar-light .navbar-toggler-icon {
+  background-color: rgb(0, 0, 0); /* Makes the hamburger icon visible */
+}
+
+ /* Disable Links and Inputs */
+ .disabled-link, .disabled-input {
+  pointer-events: none;  /* Prevent interaction */
+  opacity: 0.5;           /* Dim the element */
+}
+.disabled-link, .disabled-input {
+pointer-events: none !important;
+opacity: 0.5 !important;
+cursor: not-allowed !important;
+}

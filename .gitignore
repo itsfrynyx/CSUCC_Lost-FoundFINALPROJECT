@@ -1,0 +1,159 @@
+# Campus Lost & Found System - Git Ignore File
+
+# ============================================
+# Sensitive Files (NEVER commit these!)
+# ============================================
+DB/conn.php
+config/database.php
+.env
+.env.local
+.env.production
+
+# ============================================
+# Debug & Test Files
+# ============================================
+debug/
+php/check_*.php
+php/test_*.php
+php/verify_*.php
+php/diagnose_*.php
+php/show_database_values.php
+php/send_test_email_now.php
+test_*.html
+apply_*.html
+
+# ============================================
+# Backup Files
+# ============================================
+archive/
+*_BACKUP*.php
+*_OLD*.php
+*_before_restore*.php
+*.backup
+*.bak
+*~
+
+# ============================================
+# Database Files
+# ============================================
+*.sql
+*.sqlite
+*.db
+DB/backups/
+database/backups/
+*.dump
+
+# ============================================
+# Logs
+# ============================================
+logs/
+*.log
+error_log
+php_errors.log
+storage/logs/
+
+# ============================================
+# Uploads & User Content
+# ============================================
+uploads/*
+!uploads/.htaccess
+storage/uploads/
+PICTURES/uploads/
+php/uploads/
+*.tmp
+
+# Keep folder structure but ignore contents
+!uploads/.gitkeep
+!storage/uploads/.gitkeep
+
+# ============================================
+# Cache & Temporary Files
+# ============================================
+cache/
+storage/cache/
+tmp/
+temp/
+*.cache
+
+# ============================================
+# Composer Dependencies
+# ============================================
+vendor/
+composer.phar
+composer.lock
+
+# ============================================
+# IDE & Editor Files
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================
+# Documentation (optional - remove if you want to commit docs)
+# ============================================
+# docs/
+# *.md
+# !README.md
+
+# ============================================
+# Migration Files (already run)
+# ============================================
+DB/migrations/
+archive/migrations/
+*_migration*.php
+create_tables_*.php
+fix_*.sql
+install_*.php
+
+# ============================================
+# Reports & Generated Files
+# ============================================
+reorganization_report_*.txt
+*_report_*.txt
+*_export_*.csv
+*_export_*.xlsx
+
+# ============================================
+# OS Files
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ============================================
+# Package Managers
+# ============================================
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# ============================================
+# Build Files
+# ============================================
+dist/
+build/
+*.min.js
+*.min.css
+
+# ============================================
+# Keep These Files (Exceptions)
+# ============================================
+!.htaccess
+!.gitignore
+!.gitkeep
+
+# Local SMTP credentials
+php/config/email.local.php

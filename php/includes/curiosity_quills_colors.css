@@ -1,0 +1,181 @@
+/* CAMPUS LOST & FOUND PROFESSIONAL HYBRID COLOR PALETTE V4.0 */
+/* Combining institutional trust with modern digital design */
+
+:root {
+    /* PRIMARY COLORS - CSUCC Lost & Found green with campus-gold accents */
+    --color-brand-primary: #0B5D3B;
+    --color-brand-primary-dark: #07452D;
+    --color-brand-secondary: #D4A72C;
+    --color-brand-warm: #F5F8F5;
+    
+    /* SECONDARY COLORS - Modern Accent Colors */
+    --color-accent-green: #168354;
+    --color-accent-blue: #217A69;
+    --color-accent-gold: #D4A72C;
+    
+    /* NEUTRAL COLORS - Warm & Inviting */
+    --color-neutral-white: #FFFFFF;
+    --color-neutral-off-white: #F5F8F5;
+    --color-neutral-light-gray: #DCE8E0;
+    --color-neutral-medium-gray: #9CA3AF;
+    --color-neutral-charcoal: #173B2C;
+    
+    /* SEMANTIC COLORS - Clear & Professional */
+    --color-semantic-success: #059669;
+    --color-semantic-warning: #D97706;
+    --color-semantic-error: #DC2626;
+    --color-semantic-info: #2563EB;
+    
+    /* TEXT COLORS */
+    --text-primary: #1F2937;
+    --text-secondary: #6B7280;
+    --text-inverse: #FFFFFF;
+    --text-link: #0B5D3B;
+    --text-link-hover: #07452D;
+    --text-error: #DC2626;
+    --text-success: #059669;
+    
+    /* BACKGROUND COLORS */
+    --bg-page: #F5F8F5;
+    --bg-card: #FFFFFF;
+    --bg-alternate: #EEF5F0;
+    --bg-hover: #E6F0E9;
+    --bg-selected: rgba(11, 93, 59, 0.08);
+    --bg-dark: #0B5D3B;
+    --bg-overlay: rgba(11, 93, 59, 0.5);
+    
+    /* BORDER COLORS */
+    --border-default: #DCE8E0;
+    --border-focus: #0B5D3B;
+    --border-error: #DC2626;
+    --border-success: #059669;
+    --border-dark: #2C5282;
+    
+    /* SHADOW COLORS */
+    --shadow-color-default: rgba(30, 58, 95, 0.08);
+    --shadow-color-hover: rgba(30, 58, 95, 0.12);
+    --shadow-color-active: rgba(30, 58, 95, 0.16);
+    --shadow-dark: rgba(30, 58, 95, 0.2);
+    
+    /* SHADOWS */
+    --shadow-sm: 0 1px 3px 0 var(--shadow-color-default);
+    --shadow-md: 0 4px 6px -1px var(--shadow-color-hover);
+    --shadow-lg: 0 10px 15px -3px var(--shadow-color-active);
+    
+    /* GRADIENTS - Elegant & Sophisticated */
+    --gradient-hero: linear-gradient(135deg, #0B5D3B 0%, #168354 100%);
+    --gradient-card-hover: linear-gradient(180deg, #FFFFFF 0%, #F5F8F5 100%);
+    --gradient-loyalty-gold: linear-gradient(135deg, #D4A72C 0%, #E5C55B 100%);
+    --gradient-dark-overlay: linear-gradient(180deg, transparent 0%, rgba(30, 58, 95, 0.8) 100%);
+    
+    /* BUTTON COLORS */
+    --btn-primary-bg: #1E3A5F;
+    --btn-primary-text: #FFFFFF;
+    --btn-primary-hover: #2C5282;
+    --btn-primary-active: #152A45;
+    --btn-primary-disabled: #E8E6E1;
+    --btn-secondary-bg: transparent;
+    --btn-secondary-border: #1E3A5F;
+    --btn-secondary-text: #1E3A5F;
+    --btn-secondary-hover: rgba(30, 58, 95, 0.1);
+    --btn-danger-bg: #DC2626;
+    --btn-danger-hover: #B91C1C;
+    --btn-success-bg: #059669;
+    --btn-success-hover: #047857;
+    
+    /* INPUT COLORS */
+    --input-bg: #FFFFFF;
+    --input-border: #E8E6E1;
+    --input-border-focus: #1E3A5F;
+    --input-border-error: #DC2626;
+    --input-border-success: #059669;
+    --input-text: #1F2937;
+    --input-placeholder: #9CA3AF;
+    --input-disabled-bg: #F8F6F0;
+    --input-disabled-text: #9CA3AF;
+    
+    /* STATUS BADGE COLORS */
+    --badge-processing-bg: rgba(217, 119, 6, 0.1);
+    --badge-processing-text: #D97706;
+    --badge-shipped-bg: rgba(37, 99, 235, 0.1);
+    --badge-shipped-text: #2563EB;
+    --badge-delivered-bg: rgba(5, 150, 105, 0.1);
+    --badge-delivered-text: #059669;
+    --badge-cancelled-bg: rgba(220, 38, 38, 0.1);
+    --badge-cancelled-text: #DC2626;
+    --badge-new-bg: rgba(193, 154, 107, 0.15);
+    --badge-new-text: #A67C52;
+    --badge-premium-bg: linear-gradient(135deg, #C19A6B 0%, #D4B896 100%);
+    --badge-premium-text: #FFFFFF;
+    
+    /* NOTIFICATION COLORS */
+    --notif-success-bg: #059669;
+    --notif-success-text: #FFFFFF;
+    --notif-warning-bg: #D97706;
+    --notif-warning-text: #FFFFFF;
+    --notif-error-bg: #DC2626;
+    --notif-error-text: #FFFFFF;
+    --notif-info-bg: #2563EB;
+    --notif-info-text: #FFFFFF;
+    --notif-unread-dot: #1E3A5F;
+    
+    /* SIDEBAR COLORS - Classic Navy with Gold Accents */
+    --sidebar-bg: #0B5D3B;
+    --sidebar-text: #E8F1EA;
+    --sidebar-icon: #E8F1EA;
+    --sidebar-hover-bg: rgba(212, 167, 44, 0.12);
+    --sidebar-active-bg: rgba(212, 167, 44, 0.18);
+    --sidebar-active-text: #FFFFFF;
+    --sidebar-active-border: #D4A72C;
+    
+    /* HEADER COLORS */
+    --header-bg: #FFFFFF;
+    --header-text: #1F2937;
+    --header-icon: #6B7280;
+    --header-search-bg: #FAF9F6;
+    --header-search-border: #E8E6E1;
+    --header-search-text: #1F2937;
+    --header-search-placeholder: #9CA3AF;
+    --header-dropdown-bg: #FFFFFF;
+    --header-dropdown-hover: #FAF9F6;
+    
+    /* DARK MODE COLORS */
+    --dark-page-bg: #0F172A;
+    --dark-card-bg: #1E293B;
+    --dark-elevated-bg: #334155;
+    --dark-primary-text: #F1F5F9;
+    --dark-secondary-text: #94A3B8;
+    --dark-border: #334155;
+    --dark-input-bg: #1E293B;
+    --dark-input-border: #334155;
+    --dark-primary: #2C5282;
+    --dark-success: #34D399;
+    --dark-warning: #FBBF24;
+    --dark-error: #F87171;
+    --dark-info: #60A5FA;
+    
+    /* CHART COLORS */
+    --chart-primary: #1E3A5F;
+    --chart-secondary: #C19A6B;
+    --chart-tertiary: #059669;
+    --chart-quaternary: #D97706;
+    --chart-negative: #DC2626;
+    --chart-neutral: #9CA3AF;
+}
+
+/* Dark Mode Override */
+body.dark-mode {
+    --bg-page: var(--dark-page-bg);
+    --bg-card: var(--dark-card-bg);
+    --bg-alternate: var(--dark-elevated-bg);
+    --text-primary: var(--dark-primary-text);
+    --text-secondary: var(--dark-secondary-text);
+    --border-default: var(--dark-border);
+    --input-bg: var(--dark-input-bg);
+    --input-border: var(--dark-input-border);
+    --color-brand-primary: var(--dark-primary);
+    --color-semantic-success: var(--dark-success);
+    --color-semantic-warning: var(--dark-warning);
+    --color-semantic-error: var(--dark-error);
+    --color-semantic-info: var(--dark-info);
+}

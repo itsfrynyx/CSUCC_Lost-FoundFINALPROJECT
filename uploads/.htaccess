@@ -1,0 +1,6 @@
+Options -Indexes -ExecCGI
+SetHandler none
+
+<FilesMatch "(?i)^(?![A-Za-z0-9_-]+\.(?:jpe?g|png|gif|webp|pdf)$).+">
+    Require all denied
+</FilesMatch>

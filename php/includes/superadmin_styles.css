@@ -1,0 +1,323 @@
+/* Super Admin CSU Color Palette Override */
+/* This file overrides professional_styles.css for Super Admin users */
+
+:root {
+    /* Caraga State University Super Admin Palette */
+    --sidebar-dark: #0d5c3c !important;
+    --sidebar-darker: #094631 !important;
+    --sidebar-hover: #166d4d !important;
+    --active-menu: #d7b94b !important;
+    --primary-button: #0d5c3c !important;
+    --button-hover: #0a4732 !important;
+    
+    /* Content Colors */
+    --content-bg: #f5f7f2 !important;
+    --card-bg: #ffffff !important;
+    --text-primary: #1f2d25 !important;
+    --text-secondary: #52645d !important;
+    --text-muted: #788a80 !important;
+    --border-color: #dfe9e1 !important;
+    --hover-bg: #f1f7f3 !important;
+    
+    /* KPI Semantic Colors */
+    --stat-indigo: #0d5c3c !important;
+    --stat-indigo-light: #dfeee8 !important;
+    --stat-blue: #1a6f5d !important;
+    --stat-blue-light: #e4f5ee !important;
+    --stat-red: #b23a3a !important;
+    --stat-red-light: #fbe7e7 !important;
+    --stat-amber: #d7b94b !important;
+    --stat-amber-light: #f8f1d7 !important;
+    
+    /* Table Colors */
+    --table-header-bg: #edf4ef !important;
+    --table-row-hover: #f6faf7 !important;
+    --table-selected: #edf5ef !important;
+    --action-edit: #0d5c3c !important;
+    --action-delete: #b23a3a !important;
+    
+    /* Legacy accent colors override */
+    --accent-blue: #1a6f5d !important;
+    --accent-green: #2a9d5a !important;
+    --accent-yellow: #d7b94b !important;
+    --accent-red: #b23a3a !important;
+}
+
+/* Sidebar Overrides */
+.sidebar {
+    background: var(--sidebar-dark);
+}
+
+.sidebar-header {
+    background: var(--sidebar-darker);
+}
+
+.toggle-sidebar-btn {
+    border-color: var(--sidebar-dark);
+}
+
+.toggle-sidebar-btn i {
+    color: var(--sidebar-dark);
+}
+
+/* Menu Item Overrides */
+.menu-item:hover {
+    background: var(--sidebar-hover);
+}
+
+.menu-item.active {
+    background: var(--active-menu);
+    color: #0d5c3c;
+    border-left-color: #0d5c3c;
+}
+
+.menu-item.active i {
+    color: #0d5c3c;
+}
+
+/* Dropdown Overrides */
+.dropdown-item:hover {
+    background: var(--sidebar-hover);
+}
+
+.dropdown-item.active {
+    background: var(--active-menu);
+}
+
+/* Button Overrides */
+.btn-primary {
+    background: var(--primary-button);
+    border-color: var(--primary-button);
+}
+
+.btn-primary:hover {
+    background: var(--button-hover);
+    border-color: var(--button-hover);
+}
+
+/* Badge Overrides for Super Admin */
+.badge.bg-primary { 
+    background: none !important;
+    background-color: transparent !important;
+    border: none !important;
+    color: #0d5c3c !important;
+}
+
+.badge.bg-info { 
+    background: none !important;
+    background-color: transparent !important;
+    border: none !important;
+    color: #3B82F6 !important;
+}
+
+.badge.bg-warning { 
+    background: none !important;
+    background-color: transparent !important;
+    border: none !important;
+    color: #F59E0B !important;
+}
+
+.badge.bg-danger { 
+    background: none !important;
+    background-color: transparent !important;
+    border: none !important;
+    color: #EF4444 !important;
+}
+
+/* Stat Card Icon Overrides */
+.stat-card.info .stat-icon { 
+    background: var(--stat-indigo); 
+}
+
+.stat-card.primary .stat-icon { 
+    background: var(--stat-indigo); 
+}
+
+.stat-card.secondary .stat-icon { 
+    background: var(--stat-blue); 
+}
+
+.stat-card.warning .stat-icon { 
+    background: var(--stat-amber); 
+}
+
+.stat-card.danger .stat-icon { 
+    background: var(--stat-red); 
+}
+
+/* Table Styling Overrides */
+.table thead {
+    background: var(--table-header-bg);
+}
+
+.table tbody tr:hover {
+    background: var(--table-row-hover);
+}
+
+.table tbody tr.selected {
+    background: var(--table-selected);
+}
+
+/* Action Icon Overrides */
+.btn-action.btn-primary,
+.action-edit {
+    color: var(--action-edit);
+}
+
+.btn-action.btn-danger,
+.action-delete {
+    color: var(--action-delete);
+}
+
+/* Stats Card Overrides for Super Admin specific colors */
+.stats-card.total {
+    border-left-color: var(--stat-indigo);
+}
+
+.stats-card.total .icon {
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--stat-indigo);
+}
+
+.stats-card.pending .icon {
+    background: rgba(217, 119, 6, 0.1);
+    color: var(--stat-amber);
+}
+
+.stats-card.danger .icon {
+    background: rgba(185, 28, 28, 0.1);
+    color: var(--stat-red);
+}
+
+/* Quick Action Items */
+.quick-action-item:hover {
+    background: var(--sidebar-dark);
+    border-color: var(--sidebar-dark);
+}
+
+/* Filter Buttons */
+.filter-btn.active {
+    background: var(--sidebar-dark);
+    border-color: var(--sidebar-dark);
+}
+
+/* Form Focus States */
+.form-control:focus, 
+.form-select:focus {
+    border-color: var(--primary-button);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.search-box input:focus {
+    border-color: var(--primary-button);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+/* Chart and Card Accents */
+.card-header {
+    border-bottom-color: var(--border-color);
+}
+
+/* Notification and Alert Overrides */
+.alert-primary {
+    background-color: var(--stat-indigo-light);
+    border-color: var(--stat-indigo);
+    color: var(--stat-indigo);
+}
+
+.alert-info {
+    background-color: var(--stat-blue-light);
+    border-color: var(--stat-blue);
+    color: var(--stat-blue);
+}
+
+.alert-warning {
+    background-color: var(--stat-amber-light);
+    border-color: var(--stat-amber);
+    color: var(--stat-amber);
+}
+
+.alert-danger {
+    background-color: var(--stat-red-light);
+    border-color: var(--stat-red);
+    color: var(--stat-red);
+}
+
+/* Progress Bars */
+.progress-bar {
+    background-color: var(--primary-button);
+}
+
+/* Links */
+a.text-primary {
+    color: var(--primary-button) !important;
+}
+
+a.text-primary:hover {
+    color: var(--button-hover) !important;
+}
+
+/* Pagination */
+.pagination .page-item.active .page-link {
+    background-color: var(--primary-button);
+    border-color: var(--primary-button);
+}
+
+.pagination .page-link:hover {
+    color: var(--primary-button);
+}
+
+/* Tabs */
+.nav-tabs .nav-link.active {
+    color: var(--primary-button);
+    border-bottom-color: var(--primary-button);
+}
+
+/* Custom Checkboxes and Radios */
+.form-check-input:checked {
+    background-color: var(--primary-button);
+    border-color: var(--primary-button);
+}
+
+/* Tooltips */
+.tooltip-inner {
+    background-color: var(--sidebar-dark);
+}
+
+/* Modals */
+.modal-header {
+    border-bottom-color: var(--border-color);
+}
+
+.modal-footer {
+    border-top-color: var(--border-color);
+}
+
+/* Spinners and Loaders */
+.spinner-border.text-primary {
+    color: var(--primary-button) !important;
+}
+
+/* Super Admin Badge Indicator */
+.super-admin-indicator,
+.badge.super-admin-access {
+    background: #0d5c3c !important;
+    color: white !important;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(13, 92, 60, 0.2);
+}
+
+/* Super Admin Access Badge in Headers */
+span.badge:has(.fa-crown) {
+    background: #0d5c3c !important;
+    color: white !important;
+    box-shadow: 0 2px 8px rgba(13, 92, 60, 0.2);
+}
+
+
+

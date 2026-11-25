@@ -1,0 +1,387 @@
+/* Enhanced Professional Modal Styles - Compact Version */
+
+/* Modal Overlay */
+.modal-backdrop.show {
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Container - More Compact */
+.enhanced-modal .modal-dialog {
+    max-width: 550px;
+    margin: 1rem auto;
+}
+
+.enhanced-modal .modal-content {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+/* Modal Header - Compact */
+.enhanced-modal .modal-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    position: relative;
+}
+
+.enhanced-modal .modal-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+}
+
+.enhanced-modal .modal-title i {
+    font-size: 0.95rem;
+}
+
+.enhanced-modal .modal-title .username-highlight {
+    font-weight: 700;
+    opacity: 0.95;
+}
+
+.enhanced-modal .btn-close {
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+    transition: opacity 0.2s;
+    padding: 0.5rem;
+}
+
+.enhanced-modal .btn-close:hover {
+    opacity: 1;
+}
+
+/* Modal Body - Compact */
+.enhanced-modal .modal-body {
+    padding: 18px 20px;
+    background: #f8f9fa;
+}
+
+/* Session Summary Card - Compact */
+.session-summary {
+    background: white;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.session-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.session-info-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.session-info-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #6c757d;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.session-info-value {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #212529;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.session-info-value i {
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+.status-active {
+    color: #28a745;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.status-active .pulse-dot {
+    width: 6px;
+    height: 6px;
+    background: #28a745;
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.1);
+    }
+}
+
+/* Section Divider - Compact */
+.section-divider {
+    display: flex;
+    align-items: center;
+    margin: 16px 0 12px;
+    gap: 10px;
+}
+
+.section-divider h6 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #495057;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.section-divider .divider-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, #dee2e6, transparent);
+}
+
+/* Actions Summary - Compact */
+.actions-summary {
+    background: white;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.action-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin: 3px;
+    transition: all 0.2s;
+}
+
+.action-badge:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Timeline - Compact */
+.timeline-container {
+    background: white;
+    border-radius: 8px;
+    padding: 14px 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+.timeline-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.timeline-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.timeline-container::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 10px;
+}
+
+.timeline-container::-webkit-scrollbar-thumb:hover {
+    background: #a0aec0;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 28px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background: linear-gradient(to bottom, #e9ecef, #dee2e6);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #f1f3f5;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -25px;
+    top: 3px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: white;
+    border: 3px solid #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    z-index: 1;
+}
+
+.timeline-content {
+    padding-left: 6px;
+}
+
+.timeline-time {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.65rem;
+    color: #868e96;
+    margin-bottom: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.timeline-time i {
+    font-size: 0.6rem;
+}
+
+.timeline-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.timeline-title {
+    font-weight: 600;
+    color: #212529;
+    font-size: 0.85rem;
+}
+
+.timeline-badge {
+    font-size: 0.6rem;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.timeline-description {
+    font-size: 0.8rem;
+    color: #6c757d;
+    line-height: 1.5;
+    margin-top: 3px;
+}
+
+/* Empty State - Compact */
+.empty-state {
+    text-align: center;
+    padding: 32px 20px;
+    color: #adb5bd;
+}
+
+.empty-state i {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    opacity: 0.5;
+}
+
+.empty-state p {
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+/* Modal Footer - Compact */
+.enhanced-modal .modal-footer {
+    background: white;
+    border: none;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.enhanced-modal .modal-footer .btn {
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    transition: all 0.2s;
+}
+
+.enhanced-modal .modal-footer .btn-secondary {
+    background: #e9ecef;
+    border: none;
+    color: #495057;
+}
+
+.enhanced-modal .modal-footer .btn-secondary:hover {
+    background: #dee2e6;
+    transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .enhanced-modal .modal-dialog {
+        margin: 0.5rem;
+        max-width: calc(100% - 1rem);
+    }
+
+    .enhanced-modal .modal-header,
+    .enhanced-modal .modal-body,
+    .enhanced-modal .modal-footer {
+        padding: 14px 16px;
+    }
+
+    .session-info-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .timeline-container {
+        max-height: 250px;
+    }
+
+    .action-badge {
+        font-size: 0.6rem;
+        padding: 4px 8px;
+    }
+}
+
+/* Animation */
+.enhanced-modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+    transform: scale(0.9);
+}
+
+.enhanced-modal.show .modal-dialog {
+    transform: scale(1);
+}

@@ -1,0 +1,171 @@
+/* CAMPUS LOST & FOUND PROFESSIONAL HYBRID COLOR PALETTE V4.0 */
+/* Combining institutional trust with modern digital design */
+
+:root {
+    /* PRIMARY COLORS - Deep Blue (Trust & Stability) */
+    --color-brand-primary: #1E3A5F;
+    --color-brand-primary-light: #2C5282;
+    --color-brand-primary-dark: #152A45;
+    --color-brand-primary-hover: #2C5282;
+    
+    /* SECONDARY COLORS - Warm Gold (Premium & Classic) */
+    --color-brand-secondary: #C19A6B;
+    --color-brand-secondary-light: #D4B896;
+    --color-brand-secondary-dark: #A67C52;
+    
+    /* ACCENT COLORS - Modern Purple Touch */
+    --color-accent-purple: #667EEA;
+    --color-accent-purple-light: #818CF8;
+    --color-accent-purple-dark: #5568D3;
+    
+    /* NEUTRAL COLORS - Warm & Inviting */
+    --color-neutral-white: #FFFFFF;
+    --color-neutral-cream: #F8F6F0;
+    --color-neutral-light-gray: #E8E6E1;
+    --color-neutral-medium-gray: #9CA3AF;
+    --color-neutral-charcoal: #2C3E50;
+    --color-neutral-warm-bg: #FAF9F6;
+    
+    /* SEMANTIC COLORS - Clear & Professional */
+    --color-semantic-success: #059669;
+    --color-semantic-warning: #D97706;
+    --color-semantic-error: #DC2626;
+    --color-semantic-info: #2563EB;
+    
+    /* TEXT COLORS */
+    --text-primary: #1F2937;
+    --text-secondary: #6B7280;
+    --text-tertiary: #9CA3AF;
+    --text-inverse: #FFFFFF;
+    --text-link: #1E3A5F;
+    --text-link-hover: #2C5282;
+    --text-muted: #A0AEC0;
+    
+    /* BACKGROUND COLORS */
+    --bg-page: #FAF9F6;
+    --bg-card: #FFFFFF;
+    --bg-alternate: #F8F6F0;
+    --bg-hover: #F3F1EB;
+    --bg-selected: rgba(30, 58, 95, 0.08);
+    --bg-dark: #1E3A5F;
+    --bg-overlay: rgba(30, 58, 95, 0.5);
+    --bg-cream: #F8F6F0;
+    
+    /* BORDER COLORS */
+    --border-default: #E8E6E1;
+    --border-focus: #1E3A5F;
+    --border-error: #DC2626;
+    --border-success: #059669;
+    --border-dark: #2C5282;
+    --border-light: #F3F1EB;
+    
+    /* SHADOW COLORS */
+    --shadow-color-default: rgba(30, 58, 95, 0.08);
+    --shadow-color-hover: rgba(30, 58, 95, 0.12);
+    --shadow-color-active: rgba(30, 58, 95, 0.16);
+    --shadow-warm: rgba(193, 154, 107, 0.15);
+    
+    /* SHADOWS */
+    --shadow-sm: 0 1px 3px 0 var(--shadow-color-default);
+    --shadow-md: 0 4px 6px -1px var(--shadow-color-hover);
+    --shadow-lg: 0 10px 15px -3px var(--shadow-color-active);
+    --shadow-xl: 0 20px 25px -5px var(--shadow-color-active);
+    
+    /* GRADIENTS - Elegant & Sophisticated */
+    --gradient-hero: linear-gradient(135deg, #1E3A5F 0%, #2C5282 100%);
+    --gradient-gold: linear-gradient(135deg, #C19A6B 0%, #D4B896 100%);
+    --gradient-warm: linear-gradient(180deg, #FAF9F6 0%, #F8F6F0 100%);
+    --gradient-overlay: linear-gradient(180deg, transparent 0%, rgba(30, 58, 95, 0.8) 100%);
+    --gradient-accent: linear-gradient(135deg, #667EEA 0%, #818CF8 100%);
+    
+    /* BUTTON COLORS */
+    --btn-primary-bg: #1E3A5F;
+    --btn-primary-text: #FFFFFF;
+    --btn-primary-hover: #2C5282;
+    --btn-primary-active: #152A45;
+    --btn-secondary-bg: #C19A6B;
+    --btn-secondary-text: #FFFFFF;
+    --btn-secondary-hover: #A67C52;
+    --btn-accent-bg: #667EEA;
+    --btn-accent-hover: #5568D3;
+    --btn-danger-bg: #DC2626;
+    --btn-danger-hover: #B91C1C;
+    --btn-success-bg: #059669;
+    --btn-success-hover: #047857;
+    
+    /* INPUT COLORS */
+    --input-bg: #FFFFFF;
+    --input-border: #E8E6E1;
+    --input-border-focus: #1E3A5F;
+    --input-border-error: #DC2626;
+    --input-text: #1F2937;
+    --input-placeholder: #9CA3AF;
+    --input-disabled-bg: #F8F6F0;
+    
+    /* STATUS BADGE COLORS */
+    --badge-pending-bg: rgba(217, 119, 6, 0.1);
+    --badge-pending-text: #D97706;
+    --badge-processing-bg: rgba(37, 99, 235, 0.1);
+    --badge-processing-text: #2563EB;
+    --badge-shipped-bg: rgba(102, 126, 234, 0.1);
+    --badge-shipped-text: #667EEA;
+    --badge-delivered-bg: rgba(5, 150, 105, 0.1);
+    --badge-delivered-text: #059669;
+    --badge-cancelled-bg: rgba(220, 38, 38, 0.1);
+    --badge-cancelled-text: #DC2626;
+    --badge-new-bg: rgba(193, 154, 107, 0.15);
+    --badge-new-text: #A67C52;
+    
+    /* SIDEBAR COLORS - Classic Dark with Gold Accents */
+    --sidebar-bg: #1E3A5F;
+    --sidebar-text: #E8E6E1;
+    --sidebar-icon: #C19A6B;
+    --sidebar-hover-bg: rgba(193, 154, 107, 0.1);
+    --sidebar-active-bg: rgba(193, 154, 107, 0.15);
+    --sidebar-active-text: #FFFFFF;
+    --sidebar-active-border: #C19A6B;
+    --sidebar-divider: rgba(193, 154, 107, 0.2);
+    
+    /* HEADER COLORS */
+    --header-bg: #FFFFFF;
+    --header-text: #1F2937;
+    --header-icon: #6B7280;
+    --header-search-bg: #FAF9F6;
+    --header-search-border: #E8E6E1;
+    --header-search-focus: #1E3A5F;
+    
+    /* CARD COLORS */
+    --card-bg: #FFFFFF;
+    --card-border: #E8E6E1;
+    --card-shadow: var(--shadow-md);
+    --card-hover-shadow: var(--shadow-lg);
+    
+    /* BOOK CARD SPECIFIC */
+    --book-card-bg: #FFFFFF;
+    --book-card-border: #E8E6E1;
+    --book-card-hover-border: #C19A6B;
+    --book-card-price: #1E3A5F;
+    --book-card-author: #6B7280;
+    
+    /* NOTIFICATION COLORS */
+    --notif-success-bg: #059669;
+    --notif-warning-bg: #D97706;
+    --notif-error-bg: #DC2626;
+    --notif-info-bg: #2563EB;
+    --notif-text: #FFFFFF;
+}
+
+/* Utility Classes */
+.text-primary { color: var(--color-brand-primary) !important; }
+.text-secondary { color: var(--color-brand-secondary) !important; }
+.text-accent { color: var(--color-accent-purple) !important; }
+.bg-primary { background-color: var(--color-brand-primary) !important; }
+.bg-secondary { background-color: var(--color-brand-secondary) !important; }
+.bg-cream { background-color: var(--bg-cream) !important; }
+.border-primary { border-color: var(--color-brand-primary) !important; }
+.border-secondary { border-color: var(--color-brand-secondary) !important; }
+
+/* Gradient Utilities */
+.gradient-hero { background: var(--gradient-hero) !important; }
+.gradient-gold { background: var(--gradient-gold) !important; }
+.gradient-accent { background: var(--gradient-accent) !important; }
